@@ -14,7 +14,10 @@ namespace MvcCalc.Controllers
         {
             return View();
         }
-
-
+        [HttpPost]
+        public IActionResult Total()
+        {
+            return View();
+        }
     }
 }

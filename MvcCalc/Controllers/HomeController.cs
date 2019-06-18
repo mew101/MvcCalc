@@ -32,10 +32,11 @@ namespace MvcCalc.Controllers
                 case "/":
                     total = val1 / val2;
                     break;
-                default:
+                default: 
+                    total = 0;
                     break;
             }
-            return View();
+            return Content("Result: " + total);
         }
     }
 }

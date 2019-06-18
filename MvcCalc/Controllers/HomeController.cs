@@ -15,8 +15,26 @@ namespace MvcCalc.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Total()
+        public IActionResult Total(int val1, int val2, String calc)
         {
+            int total = 0;
+            switch (calc)
+            {
+                case "+":
+                    total = val1 + val2;
+                    break;
+                case "-":
+                    total = val1 - val2;
+                    break;
+                case "*":
+                    total = val1 * val2;
+                    break;
+                case "/":
+                    total = val1 / val2;
+                    break;
+                default:
+                    break;
+            }
             return View();
         }
     }

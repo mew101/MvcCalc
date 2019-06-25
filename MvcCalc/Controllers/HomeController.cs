@@ -36,7 +36,7 @@ namespace MvcCalc.Controllers
                     total = 0;
                     break;
             }
-            return Content("Result: " + total);
+            return Content("Result" +total);
         }
     }
 }
